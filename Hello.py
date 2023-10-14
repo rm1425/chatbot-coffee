@@ -32,10 +32,10 @@ def is_insufficient(prompt):
 # Sample DataFrame with coffee-related questions and answers
 df = pd.read_csv('coffee_dataset.csv')
 
-st.title("Coffee-Shot Chatbot")
+st.title("Coffee-Shotbot")
 
 description = """
-Welcome to the Coffee Trivia Chatbot! Dive into the world of coffee and test your knowledge with coffee-related trivia questions. Ask a trivia question or challenge the chatbot with your expertise. Have fun exploring the world of coffee beans!
+Welcome to the Coffee-Shot Chatbot! Dive into the world of coffee and test your knowledge with coffee-related questions. Ask a question or challenge the chatbot with your expertise. Have fun exploring the world of coffee beans!
 """
 
 st.markdown(description)
