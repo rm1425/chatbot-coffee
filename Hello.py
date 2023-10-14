@@ -27,7 +27,7 @@ def get_most_similar_response(df, query, top_k=1):
     return most_similar_responses
 
 def is_insufficient(prompt):
-    return "coffee" not in prompt.lower()  # Modify this logic as needed
+    return "coffee" not in prompt.lower() 
 
 # Sample DataFrame with coffee-related questions and answers
 df = pd.read_csv('coffee_dataset.csv')
