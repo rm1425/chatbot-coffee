@@ -50,7 +50,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # React to user input
-if prompt := st.chat_input("Ask a coffee trivia question or say hello:"):
+if prompt := st.chat_input("Ask a coffee related question or say hello:"):
     # Display user message in chat message container
     st.chat_message("user").markdown(prompt)
     
@@ -58,7 +58,7 @@ if prompt := st.chat_input("Ask a coffee trivia question or say hello:"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     
     if is_insufficient(prompt):
-        insufficient_response = "Please ask a coffee trivia question to get started."
+        insufficient_response = "Please ask a coffee related question to get started."
         with st.chat_message("assistant"):
             st.markdown(insufficient_response)
         st.session_state.messages.append({"role": "assistant", "content": insufficient_response, "related_query": prompt})
